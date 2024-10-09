@@ -71,6 +71,7 @@ html, body {
 .container .card .info-div #title {
     font-family: "Fraunces", serif;
     font-weight: 700;
+    color: hsl(212, 21%, 14%);
     margin-right: 3rem;
     font-size: 3rem;
     margin-top: 1.3rem;
@@ -137,6 +138,10 @@ html, body {
     padding: 0;
 }
 
+.container .card .info-div .add-to-cart:hover {
+    background-color: hsl(158, 55%, 25%);
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
@@ -162,6 +167,9 @@ html, body {
         display: block;
         width: 100%;
         height: auto;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0rem;
+        border-top-right-radius: 0.5rem;
         content:url('images/image-product-mobile.jpg');
     }
 }
