@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* 500 and 700 weight */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+/* 700 weight */
+
+/* ### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%) */
+
+html, body {
+    margin:0;
+    font-size: 14px;
+    height:100%;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height:100%;
+}
+
+.container .card {
+    background-color: hsl(0, 0%, 100%);
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.5rem;
+}
+
+.container .card .img-div {
+    min-width: 50%;
+    height: auto;
+}
+
+.container .card .img-div img{
+    height:100%;
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    content: url('images/image-product-desktop.jpg');
+}
+
+.container .card .info-div {
+    max-width: 50%;
+    height: 100%;
+    padding: 3rem;
+}
+
+.container .card .info-div #perfume-tag {
+    color: hsl(228, 12%, 48%);   
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    margin-bottom: 0.1rem;
+}
+
+.container .card .info-div #title {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    margin-right: 3rem;
+    font-size: 3rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.container .card .info-div #description {
+    color: hsl(228, 12%, 48%);   
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.container .card .info-div .prices {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container .card .info-div .prices #new-price {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: hsl(158, 36%, 37%);
+    margin-top:0.5rem;
+    display: block;
+    text-align: center;
+    margin-bottom:0.5rem;
+    margin-top: 0.5rem;
+}
+
+.container .card .info-div .prices #old-price {
+    font-family: "Fraunces", serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-decoration:line-through;
+}
+
+.container .card .info-div .add-to-cart {
+    background-color: hsl(158, 36%, 37%);
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    color:hsl(0, 0%, 100%);
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.container .card .info-div .add-to-cart p {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.container .card .info-div .add-to-cart img {
+    height:auto;
+    width: 1.5rem;
+    margin:0;
+    padding: 0;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 800px) {
+    html, body {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    html, body {
+        font-size: 5px;
+    }
+    .container .card {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .container .card .info-div {
+        max-width: 100%;
+    }
+    .container .card .img-div{
+        height:30%;
+        width: 100%;
+    }
+
+    .container .card .img-div img {
+        display: block;
+        width: 100%;
+        height: auto;
+        content:url('images/image-product-mobile.jpg');
+    }
+}
