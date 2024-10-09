@@ -148,7 +148,7 @@ html, body {
 
 @media (max-width: 500px) {
     html, body {
-        font-size: 5px;
+        font-size: 10px;
     }
     .container .card {
         flex-direction: column;
