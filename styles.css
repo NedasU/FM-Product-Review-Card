@@ -140,15 +140,10 @@ html, body {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media (max-width: 800px) {
-    html, body {
-        font-size: 10px;
-    }
-}
 
 @media (max-width: 500px) {
     html, body {
-        font-size: 10px;
+        font-size: 13px;
     }
     .container .card {
         flex-direction: column;
