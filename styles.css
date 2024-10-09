@@ -154,11 +154,13 @@ html, body {
     .container .card {
         flex-direction: column;
         width: 90%;
+        margin-bottom: 1rem;
     }
 
     .container .card .info-div {
         max-width: 100%;
         padding: 2.5rem;
+        padding-top: 1.5rem;
     }
     .container .card .img-div{
         height:30%;
